@@ -1,0 +1,296 @@
+body {
+    font-family: Verdana, Arial, Helvetica, meirio, メイリオ, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック", sans-serif;
+    background-color: #F6F6F6;
+    border-top: 8px solid #6CC6C4;
+    box-sizing: border-box;
+}
+/*---------- header ----------*/
+header {
+    text-align: center;
+    padding-bottom: 12px;
+}
+.head {
+    color: #515151;
+}
+.main_logo {
+    padding: 2px 0;
+}
+.head p {
+    font-size: 10px;
+}
+.head p:first-of-type {
+    padding-bottom: 14px;
+}
+.head p:nth-of-type(2) {
+    position: relative;
+    font-size: 25px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    padding-bottom: 10px;
+    width: 220px;
+    margin: 0 auto;
+}
+.head p:nth-of-type(2)::before {
+    content: url(images/bgTel.png);
+    padding-right: 18px;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
+.head p:nth-of-type(3) {
+    display: inline-block;
+    border: 1px solid #D6D6D6;
+    padding: 10px 20px;
+}
+.head p span {
+    color: #B22C01;
+}
+
+/*------ header-nav ------*/
+nav.header_nav {
+    padding-bottom: 22px;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+}
+nav.header_nav ul li {
+    float: left;
+    width: calc(50% - 2px);
+    border-left: 1px solid #99E1DF;
+    border-right: 1px solid #71C9C7;
+}
+nav.header_nav ul li:last-child {
+    border-right:none
+}
+nav.header_nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+    padding: 20px 0;
+    border-radius: 4px;
+}
+nav.header_nav ul li a:hover {
+    background-image: linear-gradient(rgb(108,198,196) 0%, rgb(156,227,225) 100%);
+    color: #C1FFFD;    
+}
+nav.header_nav ul li a span {
+    display: block;
+    font-size: 14px;
+}
+nav.header_nav ul li a span:last-of-type {
+    font-size: 10px;
+    font-weight: 600;
+    padding-top: 6px;
+}
+
+/* ------ main-img ------ */
+main img {
+    max-width: 100%;
+    padding: 0 0 6px;
+}
+
+/*--------- main ---------*/
+main {
+    padding: 0 12px;
+}
+.new_arrival {
+    font-size: 13px; 
+    color: #515151;  
+    background-color: #fff;
+    padding: 36px 20px 34px;
+    margin-bottom: 40px;
+}
+.new_arrival h2 {
+    font-size: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #6CC6C4;
+}
+.new_arrival dl {
+    border-bottom: 1px dotted #CCCCCC;
+}
+.new_arrival dl dd {
+    font-weight: bold;
+    padding: 15px 0 14px;
+}
+.new_arrival dl dt {
+    line-height: 20px;
+    padding: 10px;
+}
+
+.general, .aesthetics {    
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    border: 1px solid #6CC6C4;
+    border-radius: 6px 6px 0 0;
+}
+.general h2, .aesthetics h2 {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 6px 6px 0 0;
+    background-image: linear-gradient(rgb(156,227,225) 20%,rgb(108,198,196) 100%);
+}
+.general ul, .aesthetics ul {
+    padding: 0 12px;
+}
+.general ul li, .aesthetics ul li {
+    line-height: 40px;
+    list-style: none;
+    border-bottom: 1px solid #6CC6C4;    
+}
+.general ul li a, .aesthetics ul li a {
+    text-decoration: none; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #595959;
+    padding-left: 4px;  
+}
+.general ul li a::before, .aesthetics ul li a::before {
+    content: url(images/bgListIcon01.png);
+    padding-right: 10px;
+}
+
+/*---------- footer ----------*/
+.foot-nav {
+    margin: 0 12px 10px;
+    padding: 0 0 0 14px;
+    background-color: #6CC6C4;
+    border-radius: 6px;
+}
+.foot-nav ul {
+    line-height: 30px;
+}
+.foot-nav ul li {
+    display: inline-block;
+    list-style: none;
+    background-image: url(images/bgFooterIcon.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    padding: 0 16px 0 6px;
+}
+.foot-nav ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    padding-left: 18px;
+}
+footer {
+    text-align: right;
+    font-size: 13px;
+    color: rgb(81, 81, 81);
+}
+footer p {
+    margin-right: 12px;
+    line-height: 23px;
+}
+footer p:not(footer p:first-child,footer p:last-child) {
+    display: inline-block;
+}
+footer p:nth-of-type(2) {
+    margin: 0;
+}
+footer p:last-child {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding: 8px 0;
+}
+hr {
+    height: 2px;
+    background-color: #6CC6C4;
+    border: none;
+    margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+    .head {
+        position: relative;
+    }
+
+    .main_logo {
+        float: left;
+        position: absolute;
+        top: 48px;
+    }
+    .head-right {
+        float: right;
+    }
+    .head p:first-of-type {
+        padding-top: 14px;
+        padding-bottom: 20px;
+    }
+    .overall {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+    nav.header_nav {
+        clear: right;
+        padding-top: 16px;
+    }
+    nav.header_nav ul {
+        width: 100%;
+    }
+    nav.header_nav ul li {
+        width: calc(20% - 2px);
+        border: 1px solid #71c9c7;
+    }
+    nav.header_nav ul li:first-child {
+        border-radius: 6px 0 0 6px;
+    }
+    nav.header_nav ul li:last-child {
+        border-radius: 0 6px 6px 0;
+    }
+    nav.header_nav ul li:first-child a {
+        border-radius: 4px 0 0 4px;
+    }
+    nav.header_nav ul li:last-child a {
+        border-radius: 0 4px 4px 0;
+    }
+    nav.header_nav ul li a:not(nav.header_nav ul li:first-child a, nav.header_nav ul li:last-child a) {
+        border-radius: unset;
+    }
+    main {
+        padding: 0;
+    }
+    .main-right {
+        float: right;
+        /* max-width: 640px; */
+        max-width: 70%;
+    }
+    .main-left {
+        /* max-width: 260px; */
+        max-width: 28%;
+    }
+    .new_arrival dl {
+        margin-left: 10px;
+    }
+    .new_arrival dl dd {
+        float: left;
+        margin-right: 32px;
+        padding: 15px 0px;
+    }
+    .foot-nav {
+        clear: right;
+        margin: 0 0 14px;
+    }
+    footer p {
+        margin-right: 0;
+    }
+    footer p:not(footer p:last-child) {
+        display: inline-block;
+    }
+    footer p:last-child {
+        padding: 0 0 16px;
+    }
+    hr {
+        margin: 13px 0 10px;
+    }
+    .new_arrival dl dt {
+        padding: 10px 10px 10px 26%;
+    }
+}
